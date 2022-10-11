@@ -1,0 +1,29 @@
+{
+  "name": "lefthook-commitizen-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cz-commit": "cz",
+    "cz-commit-hook": "cz --hook",
+    "test": "echo Tested",
+    "prepare": "npx lefthook install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "lefthook": "1.1.2"
+  }
+}
